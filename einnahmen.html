@@ -1,0 +1,75 @@
+<html>
+  <head>
+    
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["treemap"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        // Create and populate the data table.
+        var data = google.visualization.arrayToDataTable([["Konto","Überkonto","Ansatz 2012/13 (12012013)","Differenz zu 2012"],
+["Einnahmen",null,0.00,0.00],
+["Erträge – Kuze","Einnahmen",377100.00,-30197.50],
+["Beiträge","Erträge – Kuze",100000.00,-1497.50],
+["Beitrag KuZe (2.50€)","Beiträge",100000.00,-1497.50],
+["Diverse Erträge- Kuze","Erträge – Kuze",8500.00,0.00],
+["Erträge aus dem Betrieb des KuZe","Diverse Erträge- Kuze",0.00,0.00],
+["Nebenkosten/Betriebskosten/Mieten ekze . okev","Diverse Erträge- Kuze",8500.00,0.00],
+["Zuschüsse Dritter für KuZe","Diverse Erträge- Kuze",0.00,0.00],
+["KuZe- Rücklagenabbau","Erträge – Kuze",268600.00,-28700.00],
+["Rücklagenabbau KuZe-Homepage","KuZe- Rücklagenabbau",0.00,-2000.00],
+["Rücklagenabbau KuZe-Vergleich","KuZe- Rücklagenabbau",0.00,-29000.00],
+["Rücklagenabbau KuZe-Kauf - Investitionskosten - IKU-Rücklage","KuZe- Rücklagenabbau",227557.75,0.00],
+["Rücklagenabbau KuZe-Kauf - Investitionskosten - KuZe-Rücklage","KuZe- Rücklagenabbau",22442.25,0.00],
+["Rücklagenabbau Rechtsbeistand KuZe-Kauf","KuZe- Rücklagenabbau",0.00,-5000.00],
+["Rücklagenabbau VM-Stelle","KuZe- Rücklagenabbau",0.00,-11300.00],
+["Rücklagenabbau Technikupgrade","KuZe- Rücklagenabbau",7400.00,7400.00],
+["Rücklagenabbau Büroumbau","KuZe- Rücklagenabbau",11200.00,11200.00],
+["Sonstige Studierendenschaft","Einnahmen",6407894.79,-58083.22],
+["Sonstige Studierendenschaft – Beiträge","Sonstige Studierendenschaft",6237893.50,-30592.10],
+["Studierendenschaftsbeiträge (6.50€)","Sonstige Studierendenschaft – Beiträge",263893.50,0.00],
+["Semesterticketbeiträge (143.00€)","Sonstige Studierendenschaft – Beiträge",5934000.00,-29993.10],
+["Semesterticketbeiträge WiSe (146.90€)","Sonstige Studierendenschaft – Beiträge",40000.00,-599.00],
+["diverse Erträge","Sonstige Studierendenschaft",104572.41,-28200.00],
+["Einnahmen bei Veranstaltung","diverse Erträge",2500.00,-12500.00],
+["Entgelte Dienstleistungen","diverse Erträge",1000.00,1000.00],
+["Zinseinnahmen","diverse Erträge",43000.00,-3000.00],
+["Zinseinnahmen Tagesgeld - entfällt","diverse Erträge",0.00,0.00],
+["Zuschüsse Dritter für Hochschulensommerfest","diverse Erträge",19600.00,-13700.00],
+["Rückfluss aus VeFa-Fond an den AStA","diverse Erträge",11000.00,0.00],
+["Rückfluss Fachschaften aus Vorjahr","diverse Erträge",27472.41,0.00],
+["sonstige Erträge","diverse Erträge",0.00,0.00],
+["periodenfremde Erträge","diverse Erträge",0.00,0.00],
+["Abbau von Rücklagen","Einnahmen",65428.88,708.88],
+["Übertrag Vorjahr","Abbau von Rücklagen",56428.88,56428.88],
+["Rücklagenabbau Freiland-Kooperation","Übertrag Vorjahr",0.00,-35000.00],
+["Rücklagenabbau Studierendenprojekte","Übertrag Vorjahr",0.00,-10000.00],
+["Rücklagenabbau Nil - Bauliche Maßnahmen Sicherheit","Übertrag Vorjahr",0.00,-10000.00],
+["Rücklagenabbau Erhöhter Beratungsaufwand D/M-Ablauf","Übertrag Vorjahr",0.00,-5500.00],
+["Rücklagenabbau Gartenbauinitiative Golm","Übertrag Vorjahr",0.00,-3000.00],
+["Rücklagenabbau Mongolische Jurte","Übertrag Vorjahr",0.00,-1220.00],
+["Rücklagenabbau Studierendenprojekte 2","Übertrag Vorjahr",0.00,0.00],
+["Rücklagenabbau StuPa-Homepage","Übertrag Vorjahr",1000.00,1000.00],
+["Rücklagenabbau Studiserver-Aufrüstung","Übertrag Vorjahr",5000.00,5000.00],
+["Rücklagenabbau UP-App","Übertrag Vorjahr",3000.00,3000.00]]
+);
+
+        // Create and draw the visualization.
+        var tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
+        tree.draw(data, {
+          minColor: '#f00',
+          midColor: '#ddd',
+          maxColor: '#0d0',
+          headerHeight: 15,
+          fontColor: 'black',
+          maxPostDepth: '2',
+          showScale: true});
+        }
+    </script>
+  </head>
+
+  <body>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<html>
+  <head>
+    
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["treemap"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        // Create and populate the data table.
+        var data = google.visualization.arrayToDataTable([
+["Konto ","Überkonto","Ansatz 2012/13 12012013","Differenz Vorjahr"],
+["Ausgaben",null,0.00,0.00],
+["Sonstige Studierendenschaft","Ausgaben",6399394.79,-67483.22],
+["Personalausgaben","Sonstige Studierendenschaft",83250.00,4750.00],
+["Ausgaben für Beratungen und Fallbearbeitung","Personalausgaben",36450.00,750.00],
+["Semtix Bearbeitung Sozialfonds (13h)","Ausgaben für Beratungen und Fallbearbeitung",8900.00,400.00],
+["Semtix Bearbeitung sonstige Fälle (15h)","Ausgaben für Beratungen und Fallbearbeitung",10300.00,800.00],
+["BAFöG- . Sozialberatung (8h)","Ausgaben für Beratungen und Fallbearbeitung",6000.00,-200.00],
+["Feministisches Archiv (5h)","Ausgaben für Beratungen und Fallbearbeitung",3800.00,0.00],
+["Prüfungsrechtsberatung (10h)","Ausgaben für Beratungen und Fallbearbeitung",7450.00,-250.00],
+["Sonstige Personalausgaben","Personalausgaben",46800.00,4000.00],
+["Lohnbuchhaltung","Sonstige Personalausgaben",1500.00,-500.00],
+["Büroleitung (14h)","Sonstige Personalausgaben",12350.00,1850.00],
+["Systemadministrator - alte Doppelstelle","Sonstige Personalausgaben",0.00,-2500.00],
+["Administration Studierendenserver (10h)","Sonstige Personalausgaben",6850.00,2100.00],
+["Administration Büroinfrastruktur (10h)","Sonstige Personalausgaben",6850.00,2100.00],
+["Finanzstelle 'Buchhaltung' (10h)","Sonstige Personalausgaben",6850.00,550.00],
+["Finanzstelle 'Fachschaftsfinanzen' (10h)","Sonstige Personalausgaben",4200.00,4200.00],
+["Finanzstelle 'Projektabrechnungen und Forderungen' (10h)","Sonstige Personalausgaben",4200.00,4200.00],
+["Fachschaftsfinanzen und Forderungen (19h)","Sonstige Personalausgaben",4000.00,-8000.00],
+["Sonstige Ausgaben","Sonstige Studierendenschaft",6316144.79,-72233.22],
+["Aufwendungen für bezogene Leistungen","Sonstige Ausgaben",96310.00,30750.00],
+["Honorar- und Werkverträge","Aufwendungen für bezogene Leistungen",7500.00,4000.00],
+["Beiträge Künstlersozialkasse","Aufwendungen für bezogene Leistungen",750.00,-250.00],
+["Verwaltungsberufsgenossenschaft","Aufwendungen für bezogene Leistungen",1560.00,0.00],
+["Aus- und Fortbildung","Aufwendungen für bezogene Leistungen",1500.00,0.00],
+["Aufwandsentschädigungen AStA","Aufwendungen für bezogene Leistungen",60000.00,21000.00],
+["sonstige Aufwandsentschädigungen","Aufwendungen für bezogene Leistungen",3000.00,-500.00],
+["Kosten für Rechtsbeistand (AStA)","Aufwendungen für bezogene Leistungen",9000.00,0.00],
+["Sonstiger Beratungsaufwand (Studis)","Aufwendungen für bezogene Leistungen",2000.00,0.00],
+["Studierendenberatung Mieterbund. VerbraucherZentrale","Aufwendungen für bezogene Leistungen",6000.00,1500.00],
+["Beratung Ausländischer Studierender","Aufwendungen für bezogene Leistungen",5000.00,5000.00],
+["Aufwendungen für Beiträge","Sonstige Ausgaben",5935000.00,-29993.10],
+["sonstige Mitgliedsbeiträge","Aufwendungen für Beiträge",1000.00,0.00],
+["Semesterticketbeitrag WiSe (Zahlung an VBB)","Aufwendungen für Beiträge",5934000.00,-29993.10],
+["Aufwendungen für studentische Aktivitäten","Sonstige Ausgaben",220602.38,-29197.62],
+["Veranstaltungen","Aufwendungen für studentische Aktivitäten",15000.00,-5000.00],
+["Sommerfest","Aufwendungen für studentische Aktivitäten",30000.00,-18300.00],
+["Zuschüsse Studierendenprojekte","Aufwendungen für studentische Aktivitäten",58102.38,-1897.62],
+["Sozialfonds","Aufwendungen für studentische Aktivitäten",31500.00,0.00],
+["Vernetzung und Kooperation","Aufwendungen für studentische Aktivitäten",6000.00,-4000.00],
+["BrandStuVe","Aufwendungen für studentische Aktivitäten",2000.00,0.00],
+["Zuwendungen Fachschaften","Aufwendungen für studentische Aktivitäten",78000.00,0.00],
+["Investitionen und Kooperationen","Sonstige Ausgaben",4760.00,-49220.00],
+["Kooperation Fahrradverleih","Investitionen und Kooperationen",4760.00,0.00],
+["Nil Infrastruktur","Investitionen und Kooperationen",0.00,-10000.00],
+["Kooperation Lindenpark / Mongolische Jurte","Investitionen und Kooperationen",0.00,-1220.00],
+["Gartenbau-Initiative Golm","Investitionen und Kooperationen",0.00,-3000.00],
+["Kooperation freiLand Seminarräume","Investitionen und Kooperationen",0.00,-10000.00],
+["Kooperation freiLand Spartacus Anlage","Investitionen und Kooperationen",0.00,-25000.00],
+["Diverse Aufwendungen","Sonstige Ausgaben",32000.00,5427.50],
+["Geschäftsbedarf","Diverse Aufwendungen",3500.00,500.00],
+["Bücher. Zeitschriften","Diverse Aufwendungen",1500.00,0.00],
+["Post- und Fernmeldegebühren","Diverse Aufwendungen",800.00,0.00],
+["Geräte. Ausstattung. Ausrüstung","Diverse Aufwendungen",9000.00,5000.00],
+["Bewirtschaftung AStA-Büro","Diverse Aufwendungen",0.00,0.00],
+["Mieten und Pachten","Diverse Aufwendungen",8500.00,1000.00],
+["Dienstreisen","Diverse Aufwendungen",500.00,0.00],
+["Verfügungsmittel AStA","Diverse Aufwendungen",0.00,0.00],
+["Veröffentlichungen","Diverse Aufwendungen",8000.00,-1072.50],
+["Nebenkosten Geldverkehr","Diverse Aufwendungen",200.00,0.00],
+["sonstige Aufwendungen","Diverse Aufwendungen",0.00,0.00],
+["periodenfremde Aufwendungen","Diverse Aufwendungen",0.00,0.00],
+["Fachschaften","Sonstige Ausgaben",27472.41,0.00],
+["Ausgaben aus VeFa-Fond","Fachschaften",27472.41,0.00],
+["Rücklagen / Rückstellungen","Sonstige Ausgaben",0.00,0.00],
+["Zuführung allgemeine Rücklage","Rücklagen / Rückstellungen",0.00,0.00],
+["Minderausgaben zum Übertrag ins nächste HHJ","Rücklagen / Rückstellungen",0.00,0.00],
+["Kulturzentrum","Ausgaben",385600.00,-20797.50],
+["Kuze - Personalausgaben","Kulturzentrum",43000.00,3150.00],
+["Geschäftsführung KuZe (18h)","Kuze - Personalausgaben",12350.00,1050.00],
+["Technische Leitung KuZe (18h)","Kuze - Personalausgaben",12350.00,1050.00],
+["EDV Administration KuZe (8h)","Kuze - Personalausgaben",5950.00,0.00],
+["Veranstaltungsmanagement KuZe (18h)","Kuze - Personalausgaben",12350.00,1050.00],
+["Kuze – Diverse Aufwendungen","Kulturzentrum",342600.00,-23947.50],
+["Geschäftsbedarf KuZe Reduzierung aufgrund von Minderausgaben im verg HHJ","Kuze – Diverse Aufwendungen",2000.00,0.00],
+["Fernmeldegebühren KuZe","Kuze – Diverse Aufwendungen",1600.00,200.00],
+["Geräte. Ausstattung. Ausrüstung KuZe","Kuze – Diverse Aufwendungen",20000.00,15000.00],
+["Miete/Betriebskosten KuZe Reduziert. weil wir keine IKU bezahlen in 2012/13","Kuze – Diverse Aufwendungen",50000.00,-15000.00],
+["Bauliche Unterhaltung KuZe","Kuze – Diverse Aufwendungen",3000.00,0.00],
+["Versicherungen KuZe","Kuze – Diverse Aufwendungen",1500.00,0.00],
+["Fort- . Weiterbildung KuZe","Kuze – Diverse Aufwendungen",500.00,0.00],
+["sonstige Verwaltungsausgaben KuZe","Kuze – Diverse Aufwendungen",0.00,0.00],
+["Rechtsbeistand KuZe-Kauf","Kuze – Diverse Aufwendungen",0.00,-4000.00],
+["Investitionsbeteiligung KuZe-Kauf","Kuze – Diverse Aufwendungen",250000.00,0.00],
+["KuZe-Kauf Vergleichsvereinbarung","Kuze – Diverse Aufwendungen",0.00,-29000.00],
+["Veröffentlichungen KuZe","Kuze – Diverse Aufwendungen",2000.00,302.50],
+["Kuze-Veranstaltungen Ein Haushaltstopf. aus dem der Veranstaltungsmanager VAs organisiert","Kuze – Diverse Aufwendungen",10000.00,10000.00],
+["Honorar- und Werkverträge KuZe","Kuze – Diverse Aufwendungen",1500.00,50.00],
+["Bücher . Zeitschriften KuZe","Kuze – Diverse Aufwendungen",500.00,500.00],
+["KuZe Homepage","Kuze – Diverse Aufwendungen",0.00,-2000.00]]
+
+);
+
+        // Create and draw the visualization.
+        var tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
+        tree.draw(data, {
+          minColor: '#f00',
+          midColor: '#ddd',
+          maxColor: '#0d0',
+          headerHeight: 15,
+          fontColor: 'black',
+          maxPostDepth: '2',
+          showScale: true});
+        }
+    </script>
+  </head>
+
+  <body>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
